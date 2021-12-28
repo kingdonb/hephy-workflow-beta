@@ -10,6 +10,7 @@ metadata:
     release: "{{ .Release.Name }}"
     heritage: "{{ .Release.Service }}"
 spec:
+  ingressClassName: traefik
   rules:
   - host: deis.{{ .Values.platform_domain }}
     http:
