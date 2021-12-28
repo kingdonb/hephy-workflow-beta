@@ -1,0 +1,6 @@
+description: Monitoring for Hephy Workflow.
+home: https://github.com/teamhephy/monitor/tree/master/influxdb
+maintainers:
+- email: team@teamhephy.com
+name: influxdb
+version: v2.11.2

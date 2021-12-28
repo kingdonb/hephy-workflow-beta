@@ -1,0 +1,39 @@
+org: "hephy"
+pull_policy: "IfNotPresent"
+docker_tag: v2.15.1
+# limits_cpu: "100m"
+# limits_memory: "50Mi"
+
+# external syslog endpoint
+syslog:
+  host: "" # external syslog endpoint url
+  port: "" # external syslog endpoint port
+
+sources:
+  start_script: false
+  docker: false
+  etcd: false
+  kubelet: false
+  kube_api: false
+  controller: false
+  scheduler: false
+
+output:
+  disable_deis: false
+
+boot:
+  install_build_tools: false
+
+# Any custom fluentd environment variables (https://github.com/teamhephy/fluentd#configuration)
+# can be specified as key-value pairs under daemon_environment.
+daemon_environment:
+  CONTAINER_TAIL_PARSER_TYPE: json
+
+nsqd:
+  replicas: 1
+  tcp_port: 4150
+  http_port: 4151
+
+# Role-Based Access Control for Kubernetes >= 1.5
+global:
+  use_rbac: true

@@ -1,0 +1,6 @@
+description: In-memory log buffer used by Hephy Workflow.
+home: https://github.com/teamhephy/logger
+maintainers:
+- email: team@teamhephy.com
+name: logger
+version: v2.5.1

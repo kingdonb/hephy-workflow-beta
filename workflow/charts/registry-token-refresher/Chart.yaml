@@ -1,0 +1,9 @@
+description: Token Refresher for Hephy Workflow.
+home: https://github.com/teamhephy/registry-token-refresher
+keywords:
+- private registry
+- token refresher
+maintainers:
+- email: team@teamhephy.com
+name: registry-token-refresher
+version: v1.2.2

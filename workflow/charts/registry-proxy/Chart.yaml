@@ -1,0 +1,6 @@
+description: Hephy Workflow Registry Proxy.
+home: https://github.com/teamhephy/registry-proxy
+maintainers:
+- email: team@teamhephy.com
+name: registry-proxy
+version: v1.5.1

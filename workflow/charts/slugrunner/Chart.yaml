@@ -1,0 +1,6 @@
+description: Buildpack application runner for Hephy Workflow.
+home: https://github.com/teamhephy/slugrunner
+maintainers:
+- email: team@teamhephy.com
+name: slugrunner
+version: v2.7.0

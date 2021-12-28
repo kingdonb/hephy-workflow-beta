@@ -1,0 +1,6 @@
+description: Monitoring for Hephy Workflow.
+home: https://github.com/teamhephy/monitor
+maintainers:
+- email: team@teamhephy.com
+name: monitor
+version: v2.11.2

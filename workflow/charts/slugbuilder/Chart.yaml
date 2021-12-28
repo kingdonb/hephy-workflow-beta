@@ -1,0 +1,6 @@
+description: Buildpack application builder for Hephy Workflow.
+home: https://github.com/teamhephy/slugbuilder
+maintainers:
+- email: team@teamhephy.com
+name: slugbuilder
+version: v2.8.0

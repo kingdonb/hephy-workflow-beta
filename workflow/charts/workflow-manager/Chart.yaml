@@ -1,0 +1,6 @@
+description: 'Hephy Workflow Manager: Cluster First Aid'
+home: https://github.com/teamhephy/workflow-manager
+maintainers:
+- email: team@teamhephy.com
+name: workflow-manager
+version: v2.6.2

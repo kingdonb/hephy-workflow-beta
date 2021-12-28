@@ -1,0 +1,19 @@
+{
+  "builder": "builder",
+  "controller": "controller",
+  "dockerbuilder": "dockerbuilder",
+  "fluentd": "fluentd",
+  "monitor": "monitor",
+  "logger": "logger",
+  "minio": "minio",
+  "nsq": "nsqd",
+  "postgres": "database",
+  "redis": "redis",
+  "registry": "registry",
+  "registry-proxy": "registry-proxy",
+  "registry-token-refresher": "registry-token-refresher",
+  "router": "router",
+  "slugbuilder": "slugbuilder",
+  "slugrunner": "slugrunner",
+  "workflow-manager": "workflow-manager"
+}

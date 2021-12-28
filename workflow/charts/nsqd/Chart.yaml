@@ -1,0 +1,6 @@
+description: A kubernetes based docker image for running nsq daemon.
+home: https://github.com/teamhephy/nsqd
+maintainers:
+- email: team@teamhephy.com
+name: nsqd
+version: v2.5.1

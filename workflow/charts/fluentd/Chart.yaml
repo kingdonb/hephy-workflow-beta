@@ -1,0 +1,6 @@
+description: Log shipping mechanism for Hephy Workflow.
+home: https://github.com/teamhephy/fluentd
+maintainers:
+- email: team@teamhephy.com
+name: fluentd
+version: v2.15.1

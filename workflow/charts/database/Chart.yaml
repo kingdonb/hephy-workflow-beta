@@ -1,0 +1,9 @@
+description: A PostgreSQL database used by Hephy Workflow.
+home: https://github.com/teamhephy/postgres
+keywords:
+- database
+- postgres
+maintainers:
+- email: team@teamhephy.com
+name: database
+version: v2.7.6

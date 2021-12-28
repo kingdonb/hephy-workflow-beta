@@ -1,0 +1,6 @@
+description: Git server and application builder for Hephy Workflow.
+home: https://github.com/teamhephy/builder
+maintainers:
+- email: team@teamhephy.com
+name: builder
+version: v2.13.7
