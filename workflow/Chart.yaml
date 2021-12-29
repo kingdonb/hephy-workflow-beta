@@ -4,7 +4,7 @@ home: https://github.com/teamhephy/workflow
 maintainers:
 - email: team@teamhephy.com
 name: workflow
-version: v2.24.0-beta2
+version: v2.24.0-beta3
 dependencies:
   - name: builder
     version: "v2.13.7"
@@ -17,7 +17,7 @@ dependencies:
     repository: https://charts.teamhephy.com
   - name: controller
     version: "v2.23.0"
-    repository: https://charts.teamhephy.com
+    repository: https://charts-beta.hephy.pro
   - name: slugrunner
     version: "v2.7.0"
     repository: https://charts.teamhephy.com
