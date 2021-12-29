@@ -24,7 +24,7 @@ spec:
       serviceAccount: deis-controller
       containers:
         - name: deis-controller
-          image: {{.Values.org}}/controller:{{.Values.docker_tag}}
+          image: quay.io/{{.Values.org}}/controller:{{.Values.docker_tag}}
           imagePullPolicy: {{.Values.pull_policy}}
           livenessProbe:
             httpGet:
