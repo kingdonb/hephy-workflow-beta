@@ -1,6 +1,6 @@
 org: "hephy"
 pull_policy: "IfNotPresent"
-docker_tag: v2.22.0
+docker_tag: v2.22.0  # FIXME - the real v2.23.0 controller will have...
 app_pull_policy: "IfNotPresent"
 # A comma-separated list of URLs to send app release information to
 # See https://deis.com/docs/workflow/managing-workflow/deploy-hooks

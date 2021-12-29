@@ -1,3 +1,4 @@
+apiVersion: v2
 description: Hephy Workflow Controller (API).
 home: https://github.com/teamhephy/controller
 maintainers:
