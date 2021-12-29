@@ -1,6 +1,7 @@
+apiVersion: v2
 description: Hephy Workflow Controller (API).
 home: https://github.com/teamhephy/controller
 maintainers:
 - email: team@teamhephy.com
 name: controller
-version: v2.22.0
+version: v2.23.0
