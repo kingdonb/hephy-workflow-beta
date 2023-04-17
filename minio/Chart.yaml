@@ -1,0 +1,6 @@
+description: Minio Object Storage in Kubernetes, used by Hephy Workflow.
+home: https://github.com/teamhephy/minio
+maintainers:
+- email: team@teamhephy.com
+name: minio
+version: v2.4.5

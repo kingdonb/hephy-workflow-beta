@@ -1,9 +1,9 @@
-name: Publish OCI Chart (Helm)
+name: Publish OCI Chart (workflow)
 
 on:
   push:
     tags:
-      - '*'
+      - 'workflow-*'
 
 env:
   OCI_REPO: "kingdonb/hephy-workflow-beta"
@@ -23,9 +23,9 @@ jobs:
           # REVISION=${GITHUB_SHA::8}
           # BUILD_ID="${BRANCH}-${REVISION}-${TS}"
           # LATEST_ID=canary
-          if [[ $GITHUB_REF == refs/tags/* ]]; then
-            BUILD_ID=${GITHUB_REF/refs\/tags\//}
-            LATEST_ID=latest
+          if [[ $GITHUB_REF == refs/tags/workflow-* ]]; then
+            BUILD_ID=${GITHUB_REF/refs\/tags\/workflow-/}
+            LATEST_ID=latest-workflow
           fi
           echo BUILD_DATE=$(date -u +'%Y-%m-%dT%H:%M:%SZ') >> $GITHUB_OUTPUT
           echo BUILD_ID=${BUILD_ID} >> $GITHUB_OUTPUT
