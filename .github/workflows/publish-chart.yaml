@@ -1,0 +1,43 @@
+name: Publish OCI Chart (Helm)
+
+on:
+  push:
+    tags:
+      - '*'
+
+env:
+  OCI_REPO: "oci://ghcr.io/kingdonb/hephy-workflow-beta/"
+
+jobs:
+  publish:
+    permissions:
+      contents: read
+      packages: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Prepare
+        id: prep
+        run: |
+          # BRANCH=${GITHUB_REF##*/}
+          # TS=$(date +%s)
+          # REVISION=${GITHUB_SHA::8}
+          # BUILD_ID="${BRANCH}-${REVISION}-${TS}"
+          # LATEST_ID=canary
+          if [[ $GITHUB_REF == refs/tags/* ]]; then
+            BUILD_ID=${GITHUB_REF/refs\/tags\//}
+            LATEST_ID=latest
+          fi
+          echo BUILD_DATE=${date -u +'%Y-%m-%dT%H:%M:%SZ') >> $GITHUB_OUTPUT
+          echo BUILD_ID=${BUILD_ID} >> $GITHUB_OUTPUT
+          echo LATEST_ID=${LATEST_ID} >> $GITHUB_OUTPUT
+
+      - name: Chart | Push
+        uses: appany/helm-oci-chart-releaser@v0.4.0
+        with:
+          name: workflow
+          repository: appany
+          tag: ${{ steps.prep.outputs.BUILD_ID }}
+          path: workflow
+          registry: ghcr.io
+          registry_username: ${{ github.actor }}
+          registry_password: ${{ secrets.GITHUB_TOKEN }}
