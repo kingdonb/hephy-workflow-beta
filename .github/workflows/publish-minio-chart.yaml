@@ -1,4 +1,4 @@
-name: Publish OCI Chart (workflow)
+name: Publish OCI Chart (minio)
 
 on:
   push:
