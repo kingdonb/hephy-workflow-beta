@@ -6,7 +6,7 @@ on:
       - 'minio-*'
 
 env:
-  OCI_REPO: "kingdonb/hephy-workflow-beta/minio"
+  OCI_REPO: "kingdonb/hephy-workflow-beta"
 
 jobs:
   publish:
