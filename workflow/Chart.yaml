@@ -4,46 +4,46 @@ home: https://github.com/teamhephy/workflow
 maintainers:
 - email: team@teamhephy.com
 name: workflow
-version: v2.24.0-beta3
+version: 2.24.0-beta3
 dependencies:
   - name: builder
-    version: "v2.13.7"
+    version: "2.13.7"
     repository: https://charts.teamhephy.com
   - name: slugbuilder
-    version: "v2.8.0"
+    version: "2.8.0"
     repository: https://charts.teamhephy.com
   - name: dockerbuilder
-    version: "v2.8.3"
+    version: "2.8.3"
     repository: https://charts.teamhephy.com
   - name: controller
-    version: "v2.23.0"
+    version: "2.23.0"
     repository: https://charts-beta.hephy.pro
   - name: slugrunner
-    version: "v2.7.0"
+    version: "2.7.0"
     repository: https://charts.teamhephy.com
   - name: database
-    version: "v2.7.6"
+    version: "2.7.6"
     repository: https://charts.teamhephy.com
   - name: fluentd
-    version: "v2.15.1"
+    version: "2.15.1"
     repository: https://charts.teamhephy.com
   - name: redis
-    version: "v2.4.2"
+    version: "2.4.2"
     repository: https://charts.teamhephy.com
   - name: logger
-    version: "v2.5.1"
+    version: "2.5.1"
     repository: https://charts.teamhephy.com
   - name: minio
-    version: "v2.4.5"
+    version: "2.4.5"
     repository: https://charts.teamhephy.com
   - name: monitor
-    version: "v2.11.2"
+    version: "2.11.2"
     repository: https://charts.teamhephy.com
   - name: nsqd
-    version: "v2.5.1"
+    version: "2.5.1"
     repository: https://charts.teamhephy.com
   - name: registry
-    version: "v2.6.1"
+    version: "2.6.1"
     repository: https://charts.teamhephy.com
   - name: registry-proxy
     version: "v1.5.1"
@@ -52,8 +52,8 @@ dependencies:
     version: "v1.2.2"
     repository: https://charts.teamhephy.com
   - name: router
-    version: "v2.19.0"
+    version: "2.19.0"
     repository: https://charts.teamhephy.com
   - name: workflow-manager
-    version: "v2.6.2"
+    version: "2.6.2"
     repository: https://charts.teamhephy.com
