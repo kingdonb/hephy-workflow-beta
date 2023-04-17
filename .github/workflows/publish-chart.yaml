@@ -31,6 +31,9 @@ jobs:
           echo BUILD_ID=${BUILD_ID} >> $GITHUB_OUTPUT
           echo LATEST_ID=${LATEST_ID} >> $GITHUB_OUTPUT
 
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
       - name: Chart | Push
         uses: appany/helm-oci-chart-releaser@v0.4.0
         with:
