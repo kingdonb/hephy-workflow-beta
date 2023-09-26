@@ -1,6 +1,6 @@
 {{- if eq .Values.global.logger_redis_location "on-cluster" }}
 apiVersion: {{ template "APIVersion" . }}
-kind: Deployment
+kind: StatefulSet
 metadata:
   name: deis-logger-redis
   labels:
@@ -8,9 +8,8 @@ metadata:
   annotations:
     component.deis.io/version: {{ .Values.docker_tag }}
 spec:
-  replicas: 1
-  strategy:
-    type: Recreate
+  serviceName: deis-logger-redis
+  replicas: {{ .Values.replicas }}
   selector:
     matchLabels:
       app: deis-logger-redis
@@ -33,8 +32,9 @@ spec:
             memory: {{.Values.limits_memory}}
 {{- end}}
 {{- end}}
+        command: ["/bin/boot", "--port", "{{.Values.port}}"]
         ports:
-        - containerPort: 6379
+        - containerPort: {{.Values.port}}
         volumeMounts:
         - name: logger-redis-creds
           mountPath: /var/run/secrets/deis/redis/creds

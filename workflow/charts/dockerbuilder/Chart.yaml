@@ -1,7 +1,9 @@
+apiVersion: v2
 description: Hephy dockerbuilder builds your app from a Dockerfile inside a Kubernetes
   pod, used by Hephy Workflow.
 home: https://github.com/teamhephy/dockerbuilder
 maintainers:
 - email: team@teamhephy.com
+  name: Team Hephy
 name: dockerbuilder
-version: v2.8.3
+version: 2.8.5

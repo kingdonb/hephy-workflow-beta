@@ -51,12 +51,12 @@ global:
   host_port: 5555
   # Prefix for the imagepull secret created when using private registry
   secret_prefix: "private-registry"
-  # Experimental feature to use Kubernetes ingress instead of Workflow's deis-router.
+  # Feature to use Kubernetes ingress instead of Workflow's deis-router.
   #
   # Valid values are:
   # - true: deis-router will not be deployed. Workflow will not be usable until a Kubernetes ingress controller is installed.
   # - false: deis-router will be deployed (default).
-  experimental_native_ingress: false
+  use_native_ingress: false
   # If the Kubernetes cluster uses CNI
   # use_cni: true
   # Set the `listen` variable for registry-proxy's NGINX
@@ -89,12 +89,10 @@ s3:
   builder_bucket: "your-builder-bucket-name"
 
 azure:
-  # Starting with hephy v2.22.1 only AZURE_STORAGE_CONNECTION_STRING is
-  # necesssary for the postgres wal-e db blob backups and accountname and
-  # accountkey will not be used.
-  azure-storage-conn-string: "YOUR_AZURE_STORAGE_CONNECTION_STRING"
+  # We only support using accountname and accountkey currently for storage
   accountname: "YOUR ACCOUNT NAME"
   accountkey: "YOUR ACCOUNT KEY"
+  storage_conn_string: "YOUR_AZURE_STORAGE_CONNECTION_STRING"
   registry_container: "your-registry-container-name"
   database_container: "your-database-container-name"
   builder_container: "your-builder-container-name"
@@ -138,6 +136,8 @@ controller:
   #
   # This will be the hostname that is used to build endpoints such as "deis.$HOSTNAME"
   platform_domain: ""
+  # Set a value for ingressClassName, if IngressClass is needed.
+  ingress_class: ""
 
 database:
   # The username and password to be used by the on-cluster database.
@@ -152,12 +152,12 @@ database:
     host: "database host"
     port: "database port"
 
-redis:
+redis: {}
   # Configure the following ONLY if using an off-cluster Redis instance for logger
-  db: "0"
-  host: "redis host"
-  port: "redis port"
-  password: "redis password" # "" == no password
+  # db: "0"
+  # host: "redis host"
+  # port: "redis port"
+  # password: "redis password" # "" == no password
 
 fluentd:
   syslog:

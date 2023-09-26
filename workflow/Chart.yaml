@@ -1,59 +1,60 @@
 apiVersion: v2
+dependencies:
+- name: builder
+  repository: oci://ghcr.io/kingdonb/hephy-workflow-beta
+  version: 2.13.10
+- name: slugbuilder
+  repository: oci://ghcr.io/kingdonb/hephy-workflow-beta
+  version: 2.8.2
+- name: dockerbuilder
+  repository: oci://ghcr.io/kingdonb/hephy-workflow-beta
+  version: 2.8.5
+- name: controller
+  repository: oci://ghcr.io/kingdonb/hephy-workflow-beta
+  version: 2.22.3
+- name: slugrunner
+  repository: oci://ghcr.io/kingdonb/hephy-workflow-beta
+  version: 2.7.2
+- name: database
+  repository: oci://ghcr.io/kingdonb/hephy-workflow-beta
+  version: 2.7.8
+- name: fluentd
+  repository: oci://ghcr.io/kingdonb/hephy-workflow-beta
+  version: 2.15.3
+- name: redis
+  repository: oci://ghcr.io/kingdonb/hephy-workflow-beta
+  version: 2.4.5
+- name: logger
+  repository: oci://ghcr.io/kingdonb/hephy-workflow-beta
+  version: 2.5.3
+- name: minio
+  repository: oci://ghcr.io/kingdonb/hephy-workflow-beta
+  version: 2.4.7
+- name: monitor
+  repository: oci://ghcr.io/kingdonb/hephy-workflow-beta
+  version: 2.11.6
+- name: nsqd
+  repository: oci://ghcr.io/kingdonb/hephy-workflow-beta
+  version: 2.5.4
+- name: registry
+  repository: oci://ghcr.io/kingdonb/hephy-workflow-beta
+  version: 2.6.3
+- name: registry-proxy
+  repository: oci://ghcr.io/kingdonb/hephy-workflow-beta
+  version: 1.5.3
+- name: registry-token-refresher
+  repository: oci://ghcr.io/kingdonb/hephy-workflow-beta
+  version: 1.2.4
+- name: router
+  repository: oci://ghcr.io/kingdonb/hephy-workflow-beta
+  version: 2.19.4
+- name: workflow-manager
+  repository: oci://ghcr.io/kingdonb/hephy-workflow-beta
+  version: 2.6.4
 description: Hephy Workflow
 home: https://github.com/teamhephy/workflow
 maintainers:
 - email: team@teamhephy.com
+  name: Team Hephy
 name: workflow
-version: 2.24.0-beta.3
-dependencies:
-  - name: builder
-    version: "2.13.7"
-    repository: https://charts.teamhephy.com
-  - name: slugbuilder
-    version: "2.8.0"
-    repository: https://charts.teamhephy.com
-  - name: dockerbuilder
-    version: "2.8.3"
-    repository: https://charts.teamhephy.com
-  - name: controller
-    version: "2.23.0"
-    repository: https://charts-beta.hephy.pro
-  - name: slugrunner
-    version: "2.7.0"
-    repository: https://charts.teamhephy.com
-  - name: database
-    version: "2.7.6"
-    repository: https://charts.teamhephy.com
-  - name: fluentd
-    version: "2.15.1"
-    repository: https://charts.teamhephy.com
-  - name: redis
-    version: "2.4.2"
-    repository: https://charts.teamhephy.com
-  - name: logger
-    version: "2.5.1"
-    repository: https://charts.teamhephy.com
-  - name: minio
-    version: "2.4.5"
-    repository: https://charts.teamhephy.com
-  - name: monitor
-    version: "2.11.2"
-    repository: https://charts.teamhephy.com
-  - name: nsqd
-    version: "2.5.1"
-    repository: https://charts.teamhephy.com
-  - name: registry
-    version: "2.6.1"
-    repository: https://charts.teamhephy.com
-  - name: registry-proxy
-    version: "v1.5.1"
-    repository: https://charts.teamhephy.com
-  - name: registry-token-refresher
-    version: "v1.2.2"
-    repository: https://charts.teamhephy.com
-  - name: router
-    version: "2.19.0"
-    repository: https://charts.teamhephy.com
-  - name: workflow-manager
-    version: "2.6.2"
-    repository: https://charts.teamhephy.com
+version: 2.24.0-beta.6

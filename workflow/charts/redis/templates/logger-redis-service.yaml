@@ -9,5 +9,5 @@ spec:
   selector:
     app: deis-logger-redis
   ports:
-  - port: 6379
+  - port: {{.Values.port}}
 {{- end }}
