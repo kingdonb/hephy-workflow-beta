@@ -1,3 +1,4 @@
+apiVersion: v1
 description: A PostgreSQL database used by Hephy Workflow.
 home: https://github.com/teamhephy/postgres
 keywords:
@@ -6,4 +7,4 @@ keywords:
 maintainers:
 - email: team@teamhephy.com
 name: database
-version: v2.7.6
+version: 2.7.7

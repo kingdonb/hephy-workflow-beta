@@ -1,6 +1,7 @@
+apiVersion: v1
 description: Monitoring for Hephy Workflow.
 home: https://github.com/teamhephy/monitor/tree/master/grafana
 maintainers:
 - email: team@teamhephy.com
 name: grafana
-version: v2.11.2
+version: 2.11.4

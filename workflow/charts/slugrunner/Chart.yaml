@@ -1,6 +1,8 @@
-description: Buildpack application runner for Hephy Workflow.
+apiVersion: v1
+description: Buildpack application runner for Deis Workflow.
 home: https://github.com/teamhephy/slugrunner
 maintainers:
-- email: team@teamhephy.com
+- email: engineering@deis.com
+  name: Deis Team
 name: slugrunner
-version: v2.7.0
+version: 2.7.1

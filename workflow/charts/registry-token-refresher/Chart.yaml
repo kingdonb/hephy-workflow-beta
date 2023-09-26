@@ -1,3 +1,4 @@
+apiVersion: v1
 description: Token Refresher for Hephy Workflow.
 home: https://github.com/teamhephy/registry-token-refresher
 keywords:
@@ -6,4 +7,4 @@ keywords:
 maintainers:
 - email: team@teamhephy.com
 name: registry-token-refresher
-version: v1.2.2
+version: 1.2.3

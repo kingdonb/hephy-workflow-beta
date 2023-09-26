@@ -1,6 +1,8 @@
-description: 'Hephy Workflow Manager: Cluster First Aid'
+apiVersion: v1
+description: 'Deis Workflow Manager: Cluster First Aid'
 home: https://github.com/teamhephy/workflow-manager
 maintainers:
-- email: team@teamhephy.com
+- email: engineering@deis.com
+  name: Deis Team
 name: workflow-manager
-version: v2.6.2
+version: 2.6.3

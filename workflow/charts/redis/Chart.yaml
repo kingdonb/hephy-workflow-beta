@@ -1,6 +1,7 @@
+apiVersion: v1
 description: A Redis database for use inside a Kubernetes cluster.
 home: https://github.com/teamhephy/redis
 maintainers:
 - email: team@teamhephy.com
 name: redis
-version: v2.4.2
+version: 2.4.4

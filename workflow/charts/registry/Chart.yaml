@@ -1,6 +1,7 @@
+apiVersion: v1
 description: Docker registry for Hephy Workflow.
 home: https://github.com/teamhephy/registry
 maintainers:
 - email: team@teamhephy.com
 name: registry
-version: v2.6.1
+version: 2.6.2

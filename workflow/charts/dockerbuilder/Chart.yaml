@@ -1,7 +1,9 @@
-description: Hephy dockerbuilder builds your app from a Dockerfile inside a Kubernetes
-  pod, used by Hephy Workflow.
-home: https://github.com/teamhephy/dockerbuilder
+apiVersion: v1
+description: Deis dockerbuilder builds your app from a Dockerfile inside a Kubernetes
+  pod, used by Deis Workflow.
+home: https://github.com/deisthree/dockerbuilder
 maintainers:
-- email: team@teamhephy.com
+- email: engineering@deis.com
+  name: Deis Team
 name: dockerbuilder
-version: v2.8.3
+version: 2.8.4
