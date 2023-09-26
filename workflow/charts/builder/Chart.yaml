@@ -1,7 +1,8 @@
-apiVersion: v1
-description: Git server and application builder for Deis Workflow.
+apiVersion: v2
+description: Git server and application builder for Hephy Workflow.
 home: https://github.com/teamhephy/builder
 maintainers:
 - email: team@teamhephy.com
+  name: Team Hephy
 name: builder
-version: 2.13.9
+version: 2.13.10
