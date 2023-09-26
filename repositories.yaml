@@ -1,0 +1,20 @@
+archetype:
+  - builder
+repos:
+  - workflow
+  - controller
+  - slugbuilder
+  - dockerbuilder
+  - slugrunner
+  - postgres
+  - fluentd
+  - redis
+  - logger
+  - minio
+  - monitor
+  - nsqd
+  - registry
+  - registry-proxy
+  - registry-token-refresher
+  - router
+  - workflow-manager

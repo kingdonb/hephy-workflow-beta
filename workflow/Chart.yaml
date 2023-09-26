@@ -4,7 +4,7 @@ home: https://github.com/teamhephy/workflow
 maintainers:
 - email: team@teamhephy.com
 name: workflow
-version: 2.24.0-beta.3
+version: 2.24.0-beta.4
 dependencies:
   - name: builder
     version: "2.13.7"
